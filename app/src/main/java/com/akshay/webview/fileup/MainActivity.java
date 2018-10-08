@@ -113,8 +113,7 @@ public class MainActivity extends AppCompatActivity{
             webView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         }
         webView.setWebViewClient(new Callback());
-//        webView.loadUrl("file:///android_res/raw/index.html");
-//        webView.loadUrl("https://180.92.175.246:450/CUBMobileview/TabBankingLoginPage.aspx");
+        webView.loadUrl("file:///android_res/raw/index.html");
         webView.setWebChromeClient(new WebChromeClient(){
             //For Android 3.0+
             public void openFileChooser(ValueCallback<Uri> uploadMsg){
